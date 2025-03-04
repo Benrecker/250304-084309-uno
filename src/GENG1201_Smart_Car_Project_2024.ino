@@ -132,6 +132,13 @@ void loop(){
       }
     }
     hasMoved = true;
+    if(!hasMoved){
+        for(int angle = 0; angle <180; angle += 20){
+          servo_11.write(angle);
+          delay(500);
+        }
+      }
+      hasMoved = true;
   }
 }
 void printcoloursvalues(){
